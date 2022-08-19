@@ -1,0 +1,52 @@
+@import "../helpers/mixin";
+@import "../helpers/variable";
+
+.header {
+    .top {
+        background-color: $bg-2nd;
+        padding: 6px 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                img {
+                }
+            }
+            .cart {
+                display: flex;
+                align-items: center;
+                .cart-shop {
+                    img{}
+                    margin-right: 40px;
+                }
+                .login {
+                    margin-right: 40px;
+                    span{
+                        @include text ($text-fz-md,$text-fw-light,$text-color-3nd);
+                    }
+                }
+                .register {
+                    span{
+                        @include text ($text-fz-md,$text-fw-light,$text-color-3nd);
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
+        padding: 18px 0;
+        .container {
+            a {
+                text-decoration:none;
+                margin-right: 40px;
+                @include text ($text-fz-2xl,$text-fw-regular,$text-color-primary);
+                &:hover {
+                    color: $text-color-2nd;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
