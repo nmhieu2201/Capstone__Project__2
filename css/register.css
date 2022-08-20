@@ -31,6 +31,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -51,39 +54,40 @@
   font-weight: 300;
   color: #ffffff;
 }
-.header .navbar {
+.header .navbar-bottom {
   padding: 18px 0;
 }
-.header .navbar .container a {
+.header .navbar-bottom .container a {
   text-decoration: none;
   margin-right: 40px;
   font-size: 20px;
   font-weight: 400;
   color: #000000;
 }
-.header .navbar .container a:hover {
+.header .navbar-bottom .container a:hover {
   color: #cbc9c9;
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.footer {
-  padding: 50px 0;
-}
 .footer .top {
-  padding-bottom: 30px;
+  padding: 30px 0;
+  background-color: #f8f8f8;
 }
 .footer .top .container .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .footer .top .container .row .top-item h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+}
+.footer .top .container .row .top-item ul {
+  padding-left: 0;
 }
 .footer .top .container .row .top-item ul li {
   list-style-type: none;
@@ -91,7 +95,7 @@
 }
 .footer .top .container .row .top-item ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #000000;
 }
@@ -99,20 +103,20 @@
   color: #fc0303;
 }
 .footer .top .container .row .item-register h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .footer .top .container .row .item-register .des {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #000000;
   margin-bottom: 10px;
 }
 .footer .top .container .row .item-register a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #fc0303;
   text-decoration: none;
@@ -126,20 +130,20 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .footer .bottom .container .row .bottom-item h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .footer .bottom .container .row .bottom-item p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #000000;
   margin-bottom: 10px;
 }
 .footer .bottom .container .row .bottom-item a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #fc0303;
   text-decoration: none;
