@@ -58,7 +58,7 @@
 }
 
 .footer .top {
-  padding: 30px 0;
+  padding: 30px;
   background-color: #f8f8f8;
 }
 .footer .top .container .row {
@@ -133,60 +133,4 @@
   font-weight: 300;
   color: #fc0303;
   text-decoration: none;
-}
-
-.header .top {
-  background-color: #000000;
-  padding: 6px 0;
-}
-.header .top .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .top .container .cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .top .container .cart .cart-shop {
-  margin-right: 40px;
-}
-.header .top .container .cart .login {
-  margin-right: 40px;
-}
-.header .top .container .cart .login span {
-  font-size: 16px;
-  font-weight: 300;
-  color: #ffffff;
-}
-.header .top .container .cart .register span {
-  font-size: 16px;
-  font-weight: 300;
-  color: #ffffff;
-}
-.header .navbar {
-  padding: 18px 0;
-}
-.header .navbar .container a {
-  text-decoration: none;
-  margin-right: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #000000;
-}
-.header .navbar .container a:hover {
-  color: #cbc9c9;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
