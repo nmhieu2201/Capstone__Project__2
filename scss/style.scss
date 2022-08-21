@@ -58,10 +58,12 @@
 
                     .btn-buy {
                         width: 50%;
-                        padding: 10px 30px;
-                        border: none;
-                        background-color: $bg-6th;
-                        font-size: $text-fz-2xxl;
+                        // padding: 10px 30px;
+                        // border: none;
+                        // background-color: $bg-6th;
+                        // font-size: $text-fz-2xxl;
+                        transition: all 0.5s;
+                        @include button($text-fz-2xxl,$text-fw-light,$text-color-primary,$bg-6th,10px 30px,none,0,$text-color-3nd,$bg-3nd,none);
                     }
 
                     .cost {

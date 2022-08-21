@@ -41,6 +41,9 @@
 .header .top .container .cart .cart-shop {
   margin-right: 40px;
 }
+.header .top .container .cart .cart-shop img:hover {
+  cursor: pointer;
+}
 .header .top .container .cart .login {
   margin-right: 40px;
 }
@@ -49,10 +52,22 @@
   font-weight: 300;
   color: #ffffff;
 }
+.header .top .container .cart .login span:hover {
+  color: #f6b653;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .header .top .container .cart .register span {
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
+}
+.header .top .container .cart .register span:hover {
+  color: #f6b653;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .header .navbar-bottom {
   padding: 18px 0;
@@ -65,7 +80,7 @@
   color: #000000;
 }
 .header .navbar-bottom .container a:hover {
-  color: #cbc9c9;
+  color: #f6b653;
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -101,6 +116,14 @@
 }
 .footer .top .container .row .top-item ul li a:hover {
   color: #fc0303;
+}
+.footer .top .container .row .top-item:nth-child(2) {
+  padding-left: 40px;
+  border-left: 1px solid #cbc9c9;
+}
+.footer .top .container .row .item-register {
+  padding-left: 40px;
+  border-left: 1px solid #cbc9c9;
 }
 .footer .top .container .row .item-register h4 {
   font-size: 18px;
@@ -147,4 +170,12 @@
   font-weight: 300;
   color: #fc0303;
   text-decoration: none;
+}
+.footer .bottom .container .row .bottom-item:nth-child(2) {
+  padding-left: 40px;
+  border-left: 1px solid #cbc9c9;
+}
+.footer .bottom .container .row .bottom-item:nth-child(3) {
+  padding-left: 40px;
+  border-left: 1px solid #cbc9c9;
 }
