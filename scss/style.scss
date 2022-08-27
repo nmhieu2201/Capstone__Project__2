@@ -4,52 +4,214 @@
 @import "./components/button";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./page/home/home.scss";
-@import "./page/detail/detail.scss";
-@import "./page/register/register.scss";
+// @import "./page/detail/detail.scss";
+// @import "./page/register/register.scss";
+
+.slider {
+    background-image: url('../img/image\ 6.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 30px 0;
+
+    .container {
+        .carousel {
+            .carousel-indicators {
+                @include Responsive ($XS) {
+                    bottom: -40px;
+                }
+
+                .btn-bottom {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                }
+
+                .btn-bottom:nth-child(2) {
+                    margin: 0 20px;
+                }
+            }
+
+            .carousel-inner {
+                padding: 0 50px;
+
+                @include Responsive($XS) {
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carousel-item {
+                    display: flex !important;
+                    justify-content: space-between !important;
+                    align-items: center !important;
+                    flex-wrap: nowrap !important;
+
+                    @include Responsive($XS) {
+                        // display: block !important;
+                    }
+
+                    .img {
+                        width: 50%;
+
+                        @include Responsive($XS) {
+                            display: block !important;
+                            width: 100%;
+                        }
+
+                        img {
+                            width: 100% !important;
+
+                            @include Responsive($XS) {
+                                display: block !important;
+                                width: 200px;
+                            }
+                        }
+
+                    }
+
+                    .info {
+                        margin-left: 100px;
+                        width: 50%;
+
+                        @include Responsive($XS) {
+                            display: block !important;
+                            width: 100%;
+                        }
+
+                        .prd-name {
+                            @include text($text-fz-4xl, $text-fw-light, $text-color-primary);
+
+                            @include Responsive($XS) {
+                                @include text($text-fz-2xl, $text-fw-light, $text-color-primary);
+                            }
+                        }
+
+                        .prd-des {
+                            @include text ($text-fz-2xl, $text-fw-light, $text-color-primary);
+                            margin-bottom: 20px;
+
+                            @include Responsive($XS) {
+                                @include text($text-fz-md, $text-fw-light, $text-color-primary);
+                            }
+                        }
+
+                        .btn-buy {
+                            transition: all 0.5s;
+                            @include button($text-fz-2xxl, $text-fw-light, $text-color-primary, $bg-6th, 10px 30px, none, 0, $text-color-3nd, $bg-3nd, none);
+
+                            @include Responsive($XS) {
+                                @include button($text-fz-md, $text-fw-light, $text-color-primary, $bg-6th, 10px 15px, none, 0, $text-color-3nd, $bg-3nd, none);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .carousel-control-prev {
+                width: 5%;
+
+                @include Responsive ($XS) {
+                    display: none;
+                }
+
+                .icon-prev {
+                    width: 0px;
+                    height: 0px;
+                    border-bottom: 40px solid transparent;
+                    border-top: 40px solid transparent;
+                    border-right: 40px solid #ccc;
+                }
+            }
+
+            .carousel-control-next {
+                width: 5%;
+
+                @include Responsive ($XS) {
+                    display: none;
+                }
+
+                .icon-next {
+                    width: 0px;
+                    height: 0px;
+                    border-bottom: 40px solid transparent;
+                    border-top: 40px solid transparent;
+                    border-left: 40px solid #ccc;
+                }
+            }
+        }
+    }
+
+}
 
 .product {
-    padding: 30px 0;
+    padding: 50px 0;
     background-color: $bg-4th;
 
     .container {
         padding: 0 99px;
+        @include Responsive ($MD) {
+            padding: 0 15px;
+        }
 
         h2 {
             text-align: center;
             @include text($text-fz-4xl, $text-fw-regular, $text-color-primary);
+
+            @include Responsive ($XS) {
+                @include text($text-fz-3xl, $text-fw-regular, $text-color-primary);
+            }
         }
 
         .list-shoes {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 50px;
+            gap: 30px;
+
+            // height: 500px;
+            @include Responsive ($SM) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include Responsive ($XS) {
+                display: block;
+                text-align: center;
+            }
 
             .shoes-item {
                 background-color: $bg-primary;
+
                 .info {
                     .img {
-                        padding: 45px 57px 0 57px;
-    
-                        img {
-                            width: 220px;
+                        @include Responsive ($MD) {
+                            padding: 20px;
                         }
-    
-                        
+                        padding: 45px 57px 0 57px;
+
+                        img {
+                            width: 100%;
+                        }
+
+
                     }
+
                     .desc {
                         padding: 0 23px;
+                        display: flex;
+                        flex-direction: column;
+
                         .name {
                             @include text ($text-fz-2xxl, $text-fw-light, $text-color-primary);
                         }
-    
+
                         .des {
+                            flex: 1;
                             @include text ($text-fz-2xl, $text-fw-light, $text-color-2nd);
-    
                         }
                     }
                 }
-                
+
 
                 .buy-cost {
                     display: flex;
@@ -58,12 +220,13 @@
 
                     .btn-buy {
                         width: 50%;
-                        // padding: 10px 30px;
-                        // border: none;
-                        // background-color: $bg-6th;
-                        // font-size: $text-fz-2xxl;
+                        text-decoration: none;
                         transition: all 0.5s;
-                        @include button($text-fz-2xxl,$text-fw-light,$text-color-primary,$bg-6th,10px 30px,none,0,$text-color-3nd,$bg-3nd,none);
+                        @include button($text-fz-2xxl, $text-fw-light, $text-color-primary, $bg-6th, 10px 30px, none, 0, $text-color-3nd, $bg-3nd, none);
+
+                        @include Responsive ($MD) {
+                            @include button($text-fz-2xxl, $text-fw-light, $text-color-primary, $bg-6th, 10px 15px, none, 0, $text-color-3nd, $bg-3nd, none);
+                        }
                     }
 
                     .cost {
@@ -71,7 +234,12 @@
                         padding: 10px 30px;
                         background-color: $bg-7th;
                         text-align: center;
-                        @include text ($text-fz-2xxl,$text-fw-semibold,$text-color-primary);
+                        @include text ($text-fz-2xxl, $text-fw-semibold, $text-color-primary);
+
+                        @include Responsive ($SM) {
+                            padding: 10px 15px;
+
+                        }
                     }
                 }
 

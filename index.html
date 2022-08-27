@@ -18,6 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/reset1.min.css" />
   </head>
   <body>
     <header class="header">
@@ -51,114 +52,93 @@
       </div>
     </header>
     <div class="slider">
-      <div class="container"></div>
+      <div class="container">
+        <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active btn-bottom"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            class="btn-bottom"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            class="btn-bottom"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img">
+                <img src="./img/image 4.png" class="d-block w-100" alt="" />
+              </div>
+              <div class="info">
+                <h2 class="prd-name">Product name</h2>
+                <p class="prd-des">Product description</p>
+                <button class="btn-buy">Buy Now</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img">
+                <img src="./img/image 4.png" class="d-block w-100" alt="" />
+              </div>
+              <div class="info">
+                <h2 class="prd-name">Product name</h2>
+                <p class="prd-des">Product description</p>
+                <button class="btn-buy">Buy Now</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img">
+                <img src="./img/image 4.png" class="d-block w-100" alt="" />
+              </div>
+              <div class="info">
+                <h2 class="prd-name">Product name</h2>
+                <p class="prd-des">Product description</p>
+                <button class="btn-buy">Buy Now</button>
+              </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next "
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
     </div>
     <div class="product">
       <div class="container">
         <h2>- Product Feature -</h2>
-        <div class="list-shoes">
-          <div class="shoes-item">
-            <div class="info">
-              <div class="img">
-                <img src="./img/image 5.png" alt="" />
-              </div>
-              <div class="desc">
-                <h1 class="name">Adidas Prophere</h1>
-                <p class="des">short desctipt</p>
-              </div>
-            </div>
-            <div class="buy-cost">
-              <button class="btn-buy">Buy now</button>
-              <div class="cost">
-                <span>85$</span>
-              </div>
-            </div>
-          </div>
-          <div class="shoes-item">
-            <div class="info">
-              <div class="img">
-                <img src="./img/image 5.png" alt="" />
-              </div>
-              <div class="desc">
-                <h1 class="name">Adidas Prophere</h1>
-                <p class="des">short desctipt</p>
-              </div>
-            </div>
-            <div class="buy-cost">
-              <button class="btn-buy">Buy now</button>
-              <div class="cost">
-                <span>85$</span>
-              </div>
-            </div>
-          </div>
-          <div class="shoes-item">
-            <div class="info">
-              <div class="img">
-                <img src="./img/image 5.png" alt="" />
-              </div>
-              <div class="desc">
-                <h1 class="name">Adidas Prophere</h1>
-                <p class="des">short desctipt</p>
-              </div>
-            </div>
-            <div class="buy-cost">
-              <button class="btn-buy">Buy now</button>
-              <div class="cost">
-                <span>85$</span>
-              </div>
-            </div>
-          </div>
-          <div class="shoes-item">
-            <div class="info">
-              <div class="img">
-                <img src="./img/image 5.png" alt="" />
-              </div>
-              <div class="desc">
-                <h1 class="name">Adidas Prophere</h1>
-                <p class="des">short desctipt</p>
-              </div>
-            </div>
-            <div class="buy-cost">
-              <button class="btn-buy">Buy now</button>
-              <div class="cost">
-                <span>85$</span>
-              </div>
-            </div>
-          </div>
-          <div class="shoes-item">
-            <div class="info">
-              <div class="img">
-                <img src="./img/image 5.png" alt="" />
-              </div>
-              <div class="desc">
-                <h1 class="name">Adidas Prophere</h1>
-                <p class="des">short desctipt</p>
-              </div>
-            </div>
-            <div class="buy-cost">
-              <button class="btn-buy">Buy now</button>
-              <div class="cost">
-                <span>85$</span>
-              </div>
-            </div>
-          </div>
-          <div class="shoes-item">
-            <div class="info">
-              <div class="img">
-                <img src="./img/image 5.png" alt="" />
-              </div>
-              <div class="desc">
-                <h1 class="name">Adidas Prophere</h1>
-                <p class="des">short desctipt</p>
-              </div>
-            </div>
-            <div class="buy-cost">
-              <button class="btn-buy">Buy now</button>
-              <div class="cost">
-                <span>85$</span>
-              </div>
-            </div>
-          </div>
+        <div class="list-shoes" id="list-shoes">
         </div>
       </div>
     </div>
@@ -221,5 +201,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./models/validation.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

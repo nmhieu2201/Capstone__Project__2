@@ -17,7 +17,7 @@
 
             .cart {
                 display: flex;
-                justify-content: flex-start !important;
+                justify-content: flex-start;
                 align-items: center;
 
                 .cart-shop {
@@ -28,10 +28,18 @@
                     }
 
                     margin-right: 40px;
+
+                    @include Responsive ($XS) {
+                        margin-right: 10px;
+                    }
                 }
 
                 .login {
                     margin-right: 40px;
+
+                    @include Responsive ($XS) {
+                        margin-right: 10px;
+                    }
 
                     span {
                         &:hover {
@@ -63,10 +71,18 @@
         padding: 18px 0;
 
         .container {
+            @include Responsive ($XS) {
+                text-align: center;
+            }
             a {
                 text-decoration: none;
                 margin-right: 40px;
                 @include text ($text-fz-2xl, $text-fw-regular, $text-color-primary);
+
+                @include Responsive ($XS) {
+                    margin-right: 10px;
+                    // text-align: center;
+                }
 
                 &:hover {
                     color: #f6b653;
