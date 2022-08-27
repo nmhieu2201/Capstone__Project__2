@@ -3,4 +3,111 @@
 @import "../../helpers/mixin";
 @import "../../helpers/variable";
 @import "../../layout/header";
-@import "../../layout/footer"
+@import "../../layout/footer";
+
+.product-detail {
+    padding: 50px 0;
+    background-color: $bg-4th;
+
+    .container {
+        padding: 0 99px;
+
+        @include Responsive ($MD) {
+            padding: 0 15px;
+        }
+
+        h2 {
+            text-align: center;
+            @include text($text-fz-4xl, $text-fw-regular, $text-color-primary);
+
+            @include Responsive ($XS) {
+                @include text($text-fz-3xl, $text-fw-regular, $text-color-primary);
+            }
+        }
+
+        .list-shoes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+
+            // height: 500px;
+            @include Responsive ($SM) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include Responsive ($XS) {
+                display: block;
+                text-align: center;
+            }
+
+            .shoes-item {
+                background-color: $bg-primary;
+                display: flex;
+                flex-direction: column;
+
+                .info {
+                    flex-grow: 1;
+
+                    .img {
+                        @include Responsive ($MD) {
+                            padding: 20px;
+                        }
+
+                        padding: 45px 57px 0 57px;
+
+                        img {
+                            width: 100%;
+                        }
+
+
+                    }
+
+                    .desc {
+                        padding: 0 23px;
+
+                        .name {
+                            @include text ($text-fz-2xxl, $text-fw-light, $text-color-primary);
+                        }
+
+                        .des {
+                            flex: 1;
+                            @include text ($text-fz-2xl, $text-fw-light, $text-color-2nd);
+                        }
+                    }
+                }
+
+
+                .buy-cost {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .btn-buy {
+                        width: 50%;
+                        text-decoration: none;
+                        transition: all 0.5s;
+                        @include button($text-fz-2xxl, $text-fw-light, $text-color-primary, $bg-6th, 10px 30px, none, 0, $text-color-3nd, $bg-3nd, none);
+
+                        @include Responsive ($MD) {
+                            @include button($text-fz-2xxl, $text-fw-light, $text-color-primary, $bg-6th, 10px 15px, none, 0, $text-color-3nd, $bg-3nd, none);
+                        }
+                    }
+
+                    .cost {
+                        width: 50%;
+                        padding: 10px 30px;
+                        background-color: $bg-7th;
+                        text-align: center;
+                        @include text ($text-fz-2xxl, $text-fw-semibold, $text-color-primary);
+
+                        @include Responsive ($SM) {
+                            padding: 10px 15px;
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

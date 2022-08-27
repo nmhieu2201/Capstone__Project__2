@@ -21,4 +21,6 @@ async function getDataAPI() {
   //   console.log(err);
   // });
 }
-getDataAPI();
+window.onload = () => {
+  getDataAPI();
+};

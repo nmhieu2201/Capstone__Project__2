@@ -41,7 +41,8 @@
                         margin-right: 10px;
                     }
 
-                    span {
+                    a {
+                        text-decoration: none;
                         &:hover {
                             color: #f6b653;
                             cursor: pointer;
@@ -53,7 +54,8 @@
                 }
 
                 .register {
-                    span {
+                    a {
+                        text-decoration: none;
                         &:hover {
                             color: #f6b653;
                             cursor: pointer;

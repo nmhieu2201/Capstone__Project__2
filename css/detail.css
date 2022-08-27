@@ -49,23 +49,25 @@
     margin-right: 10px;
   }
 }
-.header .top .container .cart .login span {
+.header .top .container .cart .login a {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
 }
-.header .top .container .cart .login span:hover {
+.header .top .container .cart .login a:hover {
   color: #f6b653;
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.header .top .container .cart .register span {
+.header .top .container .cart .register a {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
 }
-.header .top .container .cart .register span:hover {
+.header .top .container .cart .register a:hover {
   color: #f6b653;
   cursor: pointer;
   -webkit-transition: all 0.5s;
@@ -245,5 +247,150 @@
     border: none;
     padding: 0;
     margin-bottom: 20px;
+  }
+}
+
+.product-detail {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+.product-detail .container {
+  padding: 0 99px;
+}
+@media only screen and (max-width: 992px) {
+  .product-detail .container {
+    padding: 0 15px;
+  }
+}
+.product-detail .container h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+@media only screen and (max-width: 576px) {
+  .product-detail .container h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+  }
+}
+.product-detail .container .list-shoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .product-detail .container .list-shoes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .product-detail .container .list-shoes {
+    display: block;
+    text-align: center;
+  }
+}
+.product-detail .container .list-shoes .shoes-item {
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.product-detail .container .list-shoes .shoes-item .info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.product-detail .container .list-shoes .shoes-item .info .img {
+  padding: 45px 57px 0 57px;
+}
+@media only screen and (max-width: 992px) {
+  .product-detail .container .list-shoes .shoes-item .info .img {
+    padding: 20px;
+  }
+}
+.product-detail .container .list-shoes .shoes-item .info .img img {
+  width: 100%;
+}
+.product-detail .container .list-shoes .shoes-item .info .desc {
+  padding: 0 23px;
+}
+.product-detail .container .list-shoes .shoes-item .info .desc .name {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+}
+.product-detail .container .list-shoes .shoes-item .info .desc .des {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: #cbc9c9;
+}
+.product-detail .container .list-shoes .shoes-item .buy-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-detail .container .list-shoes .shoes-item .buy-cost .btn-buy {
+  width: 50%;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  background-color: #e1b067;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 0;
+  cursor: pointer;
+}
+.product-detail .container .list-shoes .shoes-item .buy-cost .btn-buy:hover {
+  color: #ffffff;
+  border: none;
+  background-color: #f6b653;
+}
+@media only screen and (max-width: 992px) {
+  .product-detail .container .list-shoes .shoes-item .buy-cost .btn-buy {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    background-color: #e1b067;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  .product-detail .container .list-shoes .shoes-item .buy-cost .btn-buy:hover {
+    color: #ffffff;
+    border: none;
+    background-color: #f6b653;
+  }
+}
+.product-detail .container .list-shoes .shoes-item .buy-cost .cost {
+  width: 50%;
+  padding: 10px 30px;
+  background-color: #dedddc;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+@media only screen and (max-width: 768px) {
+  .product-detail .container .list-shoes .shoes-item .buy-cost .cost {
+    padding: 10px 15px;
   }
 }

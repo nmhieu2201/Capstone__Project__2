@@ -49,23 +49,25 @@
     margin-right: 10px;
   }
 }
-.header .top .container .cart .login span {
+.header .top .container .cart .login a {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
 }
-.header .top .container .cart .login span:hover {
+.header .top .container .cart .login a:hover {
   color: #f6b653;
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.header .top .container .cart .register span {
+.header .top .container .cart .register a {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
 }
-.header .top .container .cart .register span:hover {
+.header .top .container .cart .register a:hover {
   color: #f6b653;
   cursor: pointer;
   -webkit-transition: all 0.5s;

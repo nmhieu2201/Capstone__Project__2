@@ -13,15 +13,21 @@
     background-position: bottom;
     background-repeat: no-repeat;
     overflow: hidden;
+    height: 500px;
     padding: 30px 0;
-
+    @include Responsive ($MD) {
+        height: 300px;
+    } 
+    @include Responsive ($XS) {
+        height: 250px;
+    }
     .container {
         .carousel {
             .carousel-indicators {
                 @include Responsive ($XS) {
-                    bottom: -40px;
+                    bottom:-40px;
                 }
-
+                bottom: -200px;
                 .btn-bottom {
                     width: 15px;
                     height: 15px;
@@ -43,10 +49,10 @@
                 }
 
                 .carousel-item {
-                    display: flex !important;
-                    justify-content: space-between !important;
-                    align-items: center !important;
-                    flex-wrap: nowrap !important;
+                    display: flex;
+                    justify-content: space-between ;
+                    align-items: center ;
+                    flex-wrap: nowrap ;
 
                     @include Responsive($XS) {
                         // display: block !important;
@@ -56,15 +62,12 @@
                         width: 50%;
 
                         @include Responsive($XS) {
-                            display: block !important;
-                            width: 100%;
                         }
 
                         img {
-                            width: 100% !important;
+                            width: 100%;
 
                             @include Responsive($XS) {
-                                display: block !important;
                                 width: 200px;
                             }
                         }
@@ -102,7 +105,7 @@
                             @include button($text-fz-2xxl, $text-fw-light, $text-color-primary, $bg-6th, 10px 30px, none, 0, $text-color-3nd, $bg-3nd, none);
 
                             @include Responsive($XS) {
-                                @include button($text-fz-md, $text-fw-light, $text-color-primary, $bg-6th, 10px 15px, none, 0, $text-color-3nd, $bg-3nd, none);
+                                @include button($text-fz-sm, $text-fw-light, $text-color-primary, $bg-6th, 5px 10px, none, 0, $text-color-3nd, $bg-3nd, none);
                             }
                         }
                     }
@@ -181,8 +184,10 @@
 
             .shoes-item {
                 background-color: $bg-primary;
-
+                display: flex;
+                flex-direction: column;
                 .info {
+                    flex-grow: 1;
                     .img {
                         @include Responsive ($MD) {
                             padding: 20px;
