@@ -4,6 +4,13 @@
   padding: 0 15px;
 }
 
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .header .top {
   background-color: #000000;
   padding: 6px 0;
@@ -251,7 +258,7 @@
 }
 
 .product-cart {
-  padding: 30px 0;
+  padding: 180px 0 30px 0;
 }
 .product-cart .container .row {
   display: -webkit-box;

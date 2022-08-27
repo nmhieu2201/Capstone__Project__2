@@ -13,13 +13,13 @@
     background-position: bottom;
     background-repeat: no-repeat;
     overflow: hidden;
-    height: 500px;
-    padding: 30px 0;
+    height: 600px;
+    padding:180px 0 30px 0 ;
     @include Responsive ($MD) {
-        height: 300px;
+        height: 500px;
     } 
     @include Responsive ($XS) {
-        height: 250px;
+        height: 400px;
     }
     .container {
         .carousel {
@@ -27,7 +27,7 @@
                 @include Responsive ($XS) {
                     bottom:-40px;
                 }
-                bottom: -200px;
+                bottom: -80px;
                 .btn-bottom {
                     width: 15px;
                     height: 15px;
