@@ -13,7 +13,7 @@ function Shoes() {
         </div>
         </div>
         <div class="buy-cost">
-        <a href="" class="btn-buy">Buy now</a>
+        <a href="../detail.html?productid=${shoe.id}" class="btn-buy">Buy now</a>
         <div class="cost">
             <span>${shoe.price} $</span>
         </div>

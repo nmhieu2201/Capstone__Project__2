@@ -24,7 +24,6 @@
                     padding: 0;
                 }
                 .img {
-                    padding: 100px;
                     background-color: $bg-4th;
                     @include Responsive ($SM){
                         padding: 0;

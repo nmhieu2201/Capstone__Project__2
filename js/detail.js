@@ -1,4 +1,5 @@
 import Shoes from "../models/shoes.js";
+import renderProduct from "../models/Product.js";
 async function getDataAPI() {
   const shoes = new Shoes();
   try {
@@ -21,6 +22,22 @@ async function getDataAPI() {
   //   console.log(err);
   // });
 }
+
+//
 window.onload = () => {
   getDataAPI();
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("productid");
+  async function getDataAPIProduct() {
+    try {
+      var result = await axios({
+        url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=" +myParam,
+        method: "GET",
+      });
+      renderProduct(result.data.content);
+    } catch (error) {
+      console.log(error, "err");
+    }
+  }
+  getDataAPIProduct();
 };
