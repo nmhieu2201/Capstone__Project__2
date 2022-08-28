@@ -295,6 +295,14 @@
     text-align: center;
   }
 }
+.product-cart .container .row .cart-img .img img {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .product-cart .container .row .cart-img .img img {
+    width: 100%;
+  }
+}
 .product-cart .container .row .cart-info {
   width: 55%;
 }
