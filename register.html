@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/register.css" />
   </head>
   <body>
@@ -37,7 +38,7 @@
       </div>
       <div class="navbar-bottom">
         <div class="container">
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <a href="#">Men</a>
           <a href="#">Woman</a>
           <a href="#">Kid</a>
@@ -51,17 +52,17 @@
         <h1>Register</h1>
         <div class="main-res">
           <div class="res-left">
-            <p id="mail-notice" style="color: red; margin: 0;"></p>
+            <p id="mail-notice" style="color: red; margin: 0"></p>
             <div class="res-row">
               <input id="email" type="email" placeholder="email" />
               <p>(*)</p>
             </div>
-            <p id="pass-notice" style="color: red; margin: 0;"></p>
+            <p id="pass-notice" style="color: red; margin: 0"></p>
             <div class="res-row">
-              <input id="password" type="pas" placeholder="password" />
+              <input id="password" type="password" placeholder="password" />
               <p>(*)</p>
             </div>
-            <p id="pass-check" style="color: red; margin: 0;"></p>
+            <p id="pass-check" style="color: red; margin: 0"></p>
             <div class="res-row">
               <input
                 id="checkPass"
@@ -72,12 +73,12 @@
             </div>
           </div>
           <div class="res-right">
-            <p id="name-notice" style="color: red; margin: 0;"></p>
+            <p id="name-notice" style="color: red; margin: 0"></p>
             <div class="res-row">
               <input id="name" type="text" placeholder="name" />
               <p>(*)</p>
             </div>
-            <p id="phone-notice" style="color: red; margin: 0;"></p>
+            <p id="phone-notice" style="color: red; margin: 0"></p>
             <div class="res-row">
               <input id="phone" type="tel" placeholder="phone" />
               <p>(*)</p>
@@ -164,6 +165,9 @@
         </div>
       </div>
     </footer>
+    <!-- Back to top -->
+    <a class="backToTop cd-top text-replace js-cd-top" href=""><i class="fa fa-angle-up"></i></a>
+
     <!-- AXIOS library -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
@@ -171,6 +175,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Thư viện Back To Top -->
+    <script src="./models/util.js"></script>
+    <script src="./models/main.js"></script>
 
     <script type="module" src="./js/register.js"></script>
   </body>

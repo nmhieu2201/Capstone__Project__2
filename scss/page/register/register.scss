@@ -4,6 +4,7 @@
 @import "../../helpers/variable";
 @import "../../layout/header";
 @import "../../layout/footer";
+@import "../../base/reset1.scss";
 .registers {
   position: relative;
   top: 80px;
@@ -19,6 +20,7 @@
       display: flex;
       @include Responsive($XS) {
         display: block;
+        padding: 0;
       }
 
       .res-left {
@@ -135,7 +137,7 @@
                 background: $bg-8th;
                 border-radius: 50%;
                 display: inline-block;
-                width: 39.25px;
+                width: 30px;
                 height: 30px;
                 position: relative;
                 top: 5px;
