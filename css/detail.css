@@ -16,26 +16,14 @@
   padding: 6px 0;
 }
 .header .top .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .header .top .container .cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .header .top .container .cart .cart-shop {
   margin-right: 40px;
@@ -65,7 +53,6 @@
 .header .top .container .cart .login a:hover {
   color: #f6b653;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .header .top .container .cart .register a {
@@ -77,7 +64,6 @@
 .header .top .container .cart .register a:hover {
   color: #f6b653;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .header .navbar-bottom {
@@ -103,7 +89,6 @@
 .header .navbar-bottom .container a:hover {
   color: #f6b653;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -261,15 +246,9 @@
   padding: 180px 0 30px 0;
 }
 .product-cart .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 768px) {
   .product-cart .container .row {
@@ -339,7 +318,6 @@
 }
 .product-cart .container .row .cart-info .product-size .size span:hover {
   background-color: #f5f5f5;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .product-cart .container .row .cart-info .product-size .size:last-child {
@@ -359,7 +337,6 @@
   display: inline-block;
   padding: 10px 15px;
   line-height: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6181f3), to(#7c97f5));
   background-image: linear-gradient(#6181f3, #7c97f5);
 }
 .product-cart .container .row .cart-info .product-size .plus-minus .plus:hover {
@@ -381,7 +358,6 @@
   display: inline-block;
   padding: 10px 15px;
   line-height: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6181f3), to(#7c97f5));
   background-image: linear-gradient(#6181f3, #7c97f5);
 }
 .product-cart .container .row .cart-info .product-size .plus-minus .minus i {
@@ -392,7 +368,6 @@
   font-size: 24px;
   font-weight: 400;
   color: #fff8f8;
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(5.14%, rgba(62, 32, 248, 0.9)), color-stop(89.71%, #d017ee));
   background-image: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
   padding: 10px 30px;
   border: none;
@@ -401,10 +376,8 @@
 }
 .product-cart .container .row .cart-info .product-size .btn-addtocart:hover {
   color: yellow;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6181f3), to(#7c97f5));
   background-image: linear-gradient(#6181f3, #7c97f5);
   border: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -451,18 +424,11 @@
 }
 .product-detail .container .list-shoes .shoes-item {
   background-color: #f5f5f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .product-detail .container .list-shoes .shoes-item .info {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .product-detail .container .list-shoes .shoes-item .info .img {
   padding: 45px 57px 0 57px;
@@ -484,28 +450,19 @@
   color: #000000;
 }
 .product-detail .container .list-shoes .shoes-item .info .desc .des {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   font-size: 20px;
   font-weight: 300;
   color: #cbc9c9;
 }
 .product-detail .container .list-shoes .shoes-item .buy-cost {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .product-detail .container .list-shoes .shoes-item .buy-cost .btn-buy {
   width: 50%;
   text-decoration: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-size: 24px;
   font-weight: 300;

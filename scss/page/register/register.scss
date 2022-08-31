@@ -3,4 +3,210 @@
 @import "../../helpers/mixin";
 @import "../../helpers/variable";
 @import "../../layout/header";
-@import "../../layout/footer"
+@import "../../layout/footer";
+.registers {
+  position: relative;
+  top: 80px;
+  margin-bottom: 100px;
+  .container {
+    h1 {
+      text-align: center;
+      margin: 50px 0;
+      @include text($text-fz-4xl, $text-fw-regular, $text-color-primary);
+      line-height: 48px;
+    }
+    .main-res {
+      display: flex;
+      @include Responsive($XS) {
+        display: block;
+      }
+
+      .res-left {
+        width: 50%;
+        padding: 0 50px 0 100px;
+        @include Responsive($SM) {
+          padding: 0 30px 0 50px;
+        }
+        @include Responsive($XS) {
+          width: 100%;
+          padding: 0 30px;
+        }
+        .res-row {
+          border-bottom: 5px solid $bg-5th;
+          margin-bottom: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            width: 80%;
+            &::placeholder {
+              @include text(
+                $text-fz-3xl,
+                $text-fw-regular,
+                $text-color-primary
+              );
+              @include Responsive($MD) {
+                font-size: $text-fz-2xxl;
+              }
+              @include Responsive($SM) {
+                font-size: $text-fz-2xl;
+              }
+            }
+            padding: 10px 0;
+            line-height: 36px;
+            border: none;
+            &:focus {
+              outline: none;
+            }
+            @include text($text-fz-3xl, $text-fw-regular, $bg-5th);
+          }
+          p {
+            color: $text-color-5th;
+            margin-left: 65px;
+            font-size: $text-fz-2xl;
+          }
+        }
+      }
+      .res-right {
+        width: 50%;
+        padding: 0 100px 0 50px;
+        @include Responsive($SM) {
+          padding: 0 30px 0 50px;
+        }
+        @include Responsive($XS) {
+          width: 100%;
+          padding: 0 30px;
+        }
+        .res-row {
+          border-bottom: 5px solid $bg-5th;
+          margin-bottom: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            width: 80%;
+            &::placeholder {
+              @include text(
+                $text-fz-3xl,
+                $text-fw-regular,
+                $text-color-primary
+              );
+              @include Responsive($MD) {
+                font-size: $text-fz-2xxl;
+              }
+              @include Responsive($SM) {
+                font-size: $text-fz-2xl;
+              }
+            }
+            padding: 10px 0;
+            line-height: 36px;
+            border: none;
+            &:focus {
+              outline: none;
+            }
+            @include text($text-fz-3xl, $text-fw-regular, $bg-5th);
+          }
+          p {
+            color: $text-color-5th;
+            margin-left: 65px;
+            font-size: $text-fz-2xl;
+          }
+        }
+        .gender {
+          margin-top: 55px;
+
+          span {
+            @include text($text-fz-3xl, $text-fw-regular, $text-color-primary);
+            margin-right: $text-fz-3xl;
+            @include Responsive($SM) {
+              font-size: $text-fz-2xl;
+            }
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+
+            + .label {
+              &:before {
+                content: "";
+                background: $bg-8th;
+                border-radius: 50%;
+                display: inline-block;
+                width: 39.25px;
+                height: 30px;
+                position: relative;
+                top: 5px;
+                right: 15px;
+                margin-right: 5px;
+                cursor: pointer;
+                text-align: center;
+                transition: all 250ms ease;
+                box-shadow: 0 0 0 10px $bg-8th;
+                @include Responsive($XL) {
+                  display: block;
+                  top: 35px;
+                  right: -150px;
+                  margin-right: 50px;
+                }
+                @include Responsive($SM) {
+                  width: 20px;
+                  height: 20px;
+                  top: 20px;
+                  right: -100px;
+                }
+                @include Responsive($XS) {
+                  display: block;
+                  top: 20px;
+                  right: -100px;
+                }
+              }
+            }
+            &:checked {
+              + .label {
+                &:before {
+                  background-color: $bg-5th;
+                }
+              }
+            }
+          }
+          .label {
+            @include text($text-fz-3xl, $text-fw-regular, $text-color-primary);
+            margin-left: 36px;
+            @include Responsive($SM) {
+              font-size: $text-fz-2xl;
+            }
+          }
+        }
+        .btn-res {
+          transition: all 0.3s;
+          margin: 80px 0 50px 0;
+          @include button(
+            $text-fz-3xl,
+            $text-fw-regular,
+            $text-color-8th,
+            $bg-5th,
+            10px 100px,
+            2px solid $bg-5th,
+            0,
+            $bg-5th,
+            $text-color-8th,
+            2px solid $bg-5th
+          );
+          @include Responsive($SM) {
+            padding: 10px 60px;
+          }
+          @include Responsive($SM) {
+            font-size: $text-fz-2xl;
+            margin-top: 50px;
+          }
+          @include Responsive($XS) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

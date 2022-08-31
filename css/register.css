@@ -16,26 +16,14 @@
   padding: 6px 0;
 }
 .header .top .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .header .top .container .cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .header .top .container .cart .cart-shop {
   margin-right: 40px;
@@ -65,7 +53,6 @@
 .header .top .container .cart .login a:hover {
   color: #f6b653;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .header .top .container .cart .register a {
@@ -77,7 +64,6 @@
 .header .top .container .cart .register a:hover {
   color: #f6b653;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .header .navbar-bottom {
@@ -103,7 +89,6 @@
 .header .navbar-bottom .container a:hover {
   color: #f6b653;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -254,5 +239,283 @@
     border: none;
     padding: 0;
     margin-bottom: 20px;
+  }
+}
+
+.registers {
+  position: relative;
+  top: 80px;
+  margin-bottom: 100px;
+}
+.registers .container h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 48px;
+}
+.registers .container .main-res {
+  display: flex;
+}
+@media only screen and (max-width: 576px) {
+  .registers .container .main-res {
+    display: block;
+  }
+}
+.registers .container .main-res .res-left {
+  width: 50%;
+  padding: 0 50px 0 100px;
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-left {
+    padding: 0 30px 0 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .registers .container .main-res .res-left {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+.registers .container .main-res .res-left .res-row {
+  border-bottom: 5px solid #ae18e2;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.registers .container .main-res .res-left .res-row input {
+  width: 80%;
+  padding: 10px 0;
+  line-height: 36px;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ae18e2;
+}
+.registers .container .main-res .res-left .res-row input::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.registers .container .main-res .res-left .res-row input:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.registers .container .main-res .res-left .res-row input::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+@media only screen and (max-width: 992px) {
+  .registers .container .main-res .res-left .res-row input::-moz-placeholder {
+    font-size: 24px;
+  }
+  .registers .container .main-res .res-left .res-row input:-ms-input-placeholder {
+    font-size: 24px;
+  }
+  .registers .container .main-res .res-left .res-row input::placeholder {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-left .res-row input::-moz-placeholder {
+    font-size: 20px;
+  }
+  .registers .container .main-res .res-left .res-row input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .registers .container .main-res .res-left .res-row input::placeholder {
+    font-size: 20px;
+  }
+}
+.registers .container .main-res .res-left .res-row input:focus {
+  outline: none;
+}
+.registers .container .main-res .res-left .res-row p {
+  color: #fc0303;
+  margin-left: 65px;
+  font-size: 20px;
+}
+.registers .container .main-res .res-right {
+  width: 50%;
+  padding: 0 100px 0 50px;
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right {
+    padding: 0 30px 0 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .registers .container .main-res .res-right {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+.registers .container .main-res .res-right .res-row {
+  border-bottom: 5px solid #ae18e2;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.registers .container .main-res .res-right .res-row input {
+  width: 80%;
+  padding: 10px 0;
+  line-height: 36px;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ae18e2;
+}
+.registers .container .main-res .res-right .res-row input::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.registers .container .main-res .res-right .res-row input:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.registers .container .main-res .res-right .res-row input::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+@media only screen and (max-width: 992px) {
+  .registers .container .main-res .res-right .res-row input::-moz-placeholder {
+    font-size: 24px;
+  }
+  .registers .container .main-res .res-right .res-row input:-ms-input-placeholder {
+    font-size: 24px;
+  }
+  .registers .container .main-res .res-right .res-row input::placeholder {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right .res-row input::-moz-placeholder {
+    font-size: 20px;
+  }
+  .registers .container .main-res .res-right .res-row input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .registers .container .main-res .res-right .res-row input::placeholder {
+    font-size: 20px;
+  }
+}
+.registers .container .main-res .res-right .res-row input:focus {
+  outline: none;
+}
+.registers .container .main-res .res-right .res-row p {
+  color: #fc0303;
+  margin-left: 65px;
+  font-size: 20px;
+}
+.registers .container .main-res .res-right .gender {
+  margin-top: 55px;
+}
+.registers .container .main-res .res-right .gender span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right .gender span {
+    font-size: 20px;
+  }
+}
+.registers .container .main-res .res-right .gender input {
+  position: absolute;
+  opacity: 0;
+}
+.registers .container .main-res .res-right .gender input + .label:before {
+  content: "";
+  background: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  width: 39.25px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  right: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+  box-shadow: 0 0 0 10px #cccccc;
+}
+@media only screen and (max-width: 1200px) {
+  .registers .container .main-res .res-right .gender input + .label:before {
+    display: block;
+    top: 35px;
+    right: -150px;
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right .gender input + .label:before {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: -100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .registers .container .main-res .res-right .gender input + .label:before {
+    display: block;
+    top: 20px;
+    right: -100px;
+  }
+}
+.registers .container .main-res .res-right .gender input:checked + .label:before {
+  background-color: #ae18e2;
+}
+.registers .container .main-res .res-right .gender .label {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 36px;
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right .gender .label {
+    font-size: 20px;
+  }
+}
+.registers .container .main-res .res-right .btn-res {
+  transition: all 0.3s;
+  margin: 80px 0 50px 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff8f8;
+  background-color: #ae18e2;
+  border: 2px solid #ae18e2;
+  padding: 10px 100px;
+  border-radius: 0;
+  cursor: pointer;
+}
+.registers .container .main-res .res-right .btn-res:hover {
+  color: #ae18e2;
+  border: 2px solid #ae18e2;
+  background-color: #fff8f8;
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right .btn-res {
+    padding: 10px 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-right .btn-res {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .registers .container .main-res .res-right .btn-res {
+    width: 100%;
   }
 }
