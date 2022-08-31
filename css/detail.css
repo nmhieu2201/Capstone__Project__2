@@ -263,6 +263,8 @@
   right: 50px;
   color: #f6b653;
   transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
 }
 .backToTop i {
   font-size: 40px;

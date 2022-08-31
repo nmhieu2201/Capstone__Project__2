@@ -158,6 +158,8 @@
   right: 50px;
   color: $bg-3nd;
   transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
   i {
     font-size: $text-fz-4xl;
   }
