@@ -378,6 +378,16 @@
 .registers .container .main-res .res-left .res-row input:focus {
   outline: none;
 }
+@media only screen and (max-width: 992px) {
+  .registers .container .main-res .res-left .res-row input {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registers .container .main-res .res-left .res-row input {
+    font-size: 20px;
+  }
+}
 .registers .container .main-res .res-left .res-row p {
   color: #fc0303;
   margin-left: 65px;

@@ -62,6 +62,12 @@
               outline: none;
             }
             @include text($text-fz-3xl, $text-fw-regular, $bg-5th);
+            @include Responsive($MD) {
+              font-size: $text-fz-2xxl;
+            }
+            @include Responsive($SM) {
+              font-size: $text-fz-2xl;
+            }
           }
           p {
             color: $text-color-5th;
